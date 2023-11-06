@@ -13,7 +13,7 @@
 	  "type": "html",
 	  "content": {
 		"data": {
-		  "source": "<html><script src='https://tools.cdc.gov/1M1B'></script></html>"
+		  "source": "<script src='https://tools.cdc.gov/1M1B'></script>"
 		}
 	  }
 	}
