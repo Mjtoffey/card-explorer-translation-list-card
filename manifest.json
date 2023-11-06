@@ -23,7 +23,7 @@
 	"sap.card": {
 		"data": {
 			"request": {
-				"url": "./items.json"
+				"url": "./index.html"
 			}
 		},
 		"type": "List",
