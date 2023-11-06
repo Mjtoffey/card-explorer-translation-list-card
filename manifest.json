@@ -1,11 +1,10 @@
 {
 	"_version": "1.15.0",
 	"sap.app": {
-		"id": "card.explorer.translation.list.card",
+		"id": "card.explorer.webpage.card",
 		"type": "card",
-		"i18n": "i18n/i18n.properties",
-		"title": "Sample for HTML Consumption",
-		"subTitle": "Sample for HTML Consumption",
+		"title": "Sample of a WebPage Card",
+		"subTitle" :"Sample of a WebPage Card",
 		"applicationVersion": {
 			"version": "1.0.0"
 		},
@@ -14,34 +13,35 @@
 		"description": "A long description for this Card",
 		"tags": {
 			"keywords": [
-				"Consumption",
+				"WebPage",
 				"Card",
 				"Sample"
 			]
 		}
 	},
+	"sap.ui": {
+		"technology": "UI5"
+	},
 	"sap.card": {
-		"data": {
-			"request": {
-				"url": "./index.html"
+		"type": "WebPage",
+		"configuration": {
+			"parameters": {
+				"minHeight": {
+					"description": "Minimum height of the content",
+					"type": "string",
+					"value": "25rem"
+				}
 			}
 		},
-		"type": "List",
 		"header": {
-			"title": "{{TITLE}}",
-			"subTitle": "Translation with model. {i18n>SUBTITLE}",
+			"title": "OpenUI5 Events",
 			"icon": {
-				"src": "sap-icon://product"
+				"src": "sap-icon://desktop-mobile"
 			}
 		},
 		"content": {
-			"data": {
-				"path": "/"
-			},
-			"item": {
-				"title": "{Name}",
-				"description": "{Description}"
-			}
+			"src": "./index.html",
+			"minHeight": "{parameters>/minHeight/value}"
 		}
 	}
 }
